@@ -1,0 +1,299 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-bottom: 100px; /* Ensures footer is at the bottom */
+}
+
+nav {
+    background: #5f5d5d;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .logo a {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* About Section */
+#about {
+    padding-top: 80px; /* Avoids overlap with fixed navbar */
+    background-color: #fff;
+    padding-bottom: 2rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+.photo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #333;
+    background-image: url('shubham.jpg');
+    background-size: cover; 
+}
+
+.about-info {
+    flex: 2;
+    padding-left: 2rem;
+}
+
+.about-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-info p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #e0f7fa;
+    padding: 2rem;
+    text-align: center;
+}
+
+#skills h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill-card {
+    background-color: #f6f6f1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: left;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* Projects Section */
+#projects {
+    background-color:#f4f4f4;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project-card {
+    background-color:#f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: left;
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #007bff;
+}
+
+/* Contact Form Section */
+#contact {
+    background-color: #fffffb;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#responseMessage {
+    margin-top: 1rem;
+    color: green;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .socials a:hover {
+    color: #f4f4f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-container {
+        margin-bottom: 1rem;
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
